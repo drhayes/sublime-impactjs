@@ -7,7 +7,10 @@
 )
 .defines(function() {
   Entity${1/^(.)/\U\1/} = ig.Entity.extend({
-    ${2:init: function() {$0}}
+    ${2:init: function(x, y, settings) {
+      this.parent(x, y, settings);
+      $0
+    }}
   });
 });
 ]]></content>
