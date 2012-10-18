@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[ig.module(
+  'game.entities.${1:moduleName}'
+)
+.requires(
+  'impact.entity'
+)
+.defines(function() {
+  Entity${1/^(.)/\U\1/} = ig.Entity.extend({
+    ${2:init: function() {$0}}
+  });
+});
+]]></content>
+    <tabTrigger>igm</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
