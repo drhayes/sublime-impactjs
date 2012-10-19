@@ -1,0 +1,45 @@
+{ "name": "ImpactJS",  "scopeName": "source.js.impact",
+  "fileTypes": ["js"],
+  "patterns": [
+    {
+      "name": "meta.module.impact",
+      "begin": "\\b(ig)\\.(module)\\(",
+      "beginCaptures": {
+        "1": {
+          "name": "support.variable.impact.namespace"
+        },
+        "2": {
+          "name": "support.function.impact"
+        }
+      },
+      "end": "\\b\\)\\b",
+      "patterns": [
+        {
+          "name": "entity.name.impact.module",
+          "match": "['\"]\\b(.+)\\b['\"]"
+        },
+        {
+          "name": "meta.module.impact.requirements",
+          "begin": "\\b(requires)\\(",
+          "beginCaptures": {
+            "1": {
+              "name": "support.function.impact"
+            }
+          },
+          "end": "\\b\\)\\.\\b",
+          "patterns": [
+            {
+              "name": "entity.name.impact.module.requirement",
+              "match": "['\"]\\b(.+)\\b['\"]"
+            }
+          ]
+        },
+        {
+          "name": "support.function.impact",
+          "match": "\\bdefine\\b"
+        }
+      ]
+    }
+  ],
+  "uuid": "fadaa18d-154c-45fb-98e3-64c3f4e4cbeb"
+}
