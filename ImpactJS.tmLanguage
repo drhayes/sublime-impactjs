@@ -61,17 +61,44 @@
 							<key>name</key>
 							<string>entity.name.impact.module.requirement</string>
 						</dict>
+						<dict>
+							<key>begin</key>
+							<string>\b(defines)\(</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>name</key>
+									<string>support.function.impact</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>\b\)\b</string>
+							<key>name</key>
+							<string>meta.module.impact.definition</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>source.js</string>
+								</dict>
+							</array>
+						</dict>
 					</array>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bdefine\b</string>
-					<key>name</key>
-					<string>support.function.impact</string>
 				</dict>
 			</array>
 		</dict>
 	</array>
+	<key>repository</key>
+	<dict>
+		<key>ImpactDefinition</key>
+		<dict>
+			<key>match</key>
+			<string>source.js</string>
+			<key>name</key>
+			<string>meta.module.impact</string>
+		</dict>
+	</dict>
 	<key>scopeName</key>
 	<string>source.js.impact</string>
 	<key>uuid</key>

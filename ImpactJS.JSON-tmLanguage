@@ -31,15 +31,32 @@
             {
               "name": "entity.name.impact.module.requirement",
               "match": "['\"]\\b(.+)\\b['\"]"
+            },
+            {
+              "name": "meta.module.impact.definition",
+              "begin": "\\b(defines)\\(",
+              "beginCaptures": {
+                "1": {
+                  "name": "support.function.impact"
+                }
+              },
+              "end": "\\b\\)\\b",
+              "patterns": [
+                {
+                  "include": "source.js"
+                }
+              ]
             }
           ]
-        },
-        {
-          "name": "support.function.impact",
-          "match": "\\bdefine\\b"
         }
       ]
     }
   ],
-  "uuid": "fadaa18d-154c-45fb-98e3-64c3f4e4cbeb"
+  "uuid": "fadaa18d-154c-45fb-98e3-64c3f4e4cbeb",
+  "repository": {
+    "ImpactDefinition": {
+      "name": "meta.module.impact",
+      "match": "source.js"
+    }
+  }
 }
