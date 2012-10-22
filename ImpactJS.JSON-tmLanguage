@@ -12,7 +12,7 @@
           "name": "support.function.impact"
         }
       },
-      "end": "\\b\\)\\b",
+      "end": "\\)\\b",
       "patterns": [
         {
           "name": "entity.name.impact.module",
@@ -20,32 +20,32 @@
         },
         {
           "name": "meta.module.impact.requirements",
-          "begin": "\\b(requires)\\(",
+          "begin": "\\.\\s*(requires)\\s*\\((?=\\s*['\"a-zA-Z0-9\\.\\,\\s]*)",
           "beginCaptures": {
             "1": {
               "name": "support.function.impact"
             }
           },
-          "end": "\\b\\)\\.\\b",
+          "end": "\\)(?=(\\.\\s*defines)?)",
           "patterns": [
             {
-              "name": "entity.name.impact.module.requirement",
-              "match": "['\"]\\b(.+)\\b['\"]"
-            },
+              "name": "entity.name.requirement",
+              "match": "['\"][\\w\\.]+['\"]"
+            }
+          ]
+        },
+        {
+          "name": "meta.module.impact.definition",
+          "begin": "(defines)\\s*\\(",
+          "beginCaptures": {
+            "1": {
+              "name": "support.function.impact"
+            }
+          },
+          "end": "\\);",
+          "patterns": [
             {
-              "name": "meta.module.impact.definition",
-              "begin": "\\b(defines)\\(",
-              "beginCaptures": {
-                "1": {
-                  "name": "support.function.impact"
-                }
-              },
-              "end": "\\b\\)\\b",
-              "patterns": [
-                {
-                  "include": "source.js"
-                }
-              ]
+              "include": "source.js"
             }
           ]
         }

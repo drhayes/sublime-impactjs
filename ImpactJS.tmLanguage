@@ -27,7 +27,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>\b\)\b</string>
+			<string>\)\b</string>
 			<key>name</key>
 			<string>meta.module.impact</string>
 			<key>patterns</key>
@@ -40,7 +40,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>\b(requires)\(</string>
+					<string>\.\s*(requires)\s*\((?=\s*['"a-zA-Z0-9\.\,\s]*)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -50,39 +50,39 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>\b\)\.\b</string>
+					<string>\)(?=(\.\s*defines)?)</string>
 					<key>name</key>
 					<string>meta.module.impact.requirements</string>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>match</key>
-							<string>['"]\b(.+)\b['"]</string>
+							<string>['"][\w\.]+['"]</string>
 							<key>name</key>
-							<string>entity.name.impact.module.requirement</string>
+							<string>entity.name.requirement</string>
 						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(defines)\s*\(</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
 						<dict>
-							<key>begin</key>
-							<string>\b(defines)\(</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>support.function.impact</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>\b\)\b</string>
 							<key>name</key>
-							<string>meta.module.impact.definition</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.js</string>
-								</dict>
-							</array>
+							<string>support.function.impact</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\);</string>
+					<key>name</key>
+					<string>meta.module.impact.definition</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>source.js</string>
 						</dict>
 					</array>
 				</dict>
