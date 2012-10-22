@@ -1,0 +1,9 @@
+{
+  "scope": "meta.storage.type.impact.entity",
+  "completions": [
+    {
+      "trigger": "addanim",
+      "contents": "this.addAnim('$1', ${2:1}, [$0]);"
+    }
+  ]
+}
