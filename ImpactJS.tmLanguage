@@ -84,6 +84,14 @@
 							<key>include</key>
 							<string>source.js</string>
 						</dict>
+						<dict>
+							<key>include</key>
+							<string>#ImpactEntity</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#ImpactExtend</string>
+						</dict>
 					</array>
 				</dict>
 			</array>
@@ -91,12 +99,19 @@
 	</array>
 	<key>repository</key>
 	<dict>
-		<key>ImpactDefinition</key>
+		<key>ImpactEntity</key>
 		<dict>
 			<key>match</key>
-			<string>source.js</string>
+			<string>\big.Entity\b</string>
 			<key>name</key>
-			<string>meta.module.impact</string>
+			<string>support.class.impact.entity</string>
+		</dict>
+		<key>ImpactExtend</key>
+		<dict>
+			<key>match</key>
+			<string>\bextend\b</string>
+			<key>name</key>
+			<string>support.function.impact</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>

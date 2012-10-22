@@ -46,6 +46,12 @@
           "patterns": [
             {
               "include": "source.js"
+            },
+            {
+              "include": "#ImpactEntity"
+            },
+            {
+              "include": "#ImpactExtend"
             }
           ]
         }
@@ -54,9 +60,13 @@
   ],
   "uuid": "fadaa18d-154c-45fb-98e3-64c3f4e4cbeb",
   "repository": {
-    "ImpactDefinition": {
-      "name": "meta.module.impact",
-      "match": "source.js"
+    "ImpactEntity": {
+      "name": "support.class.impact.entity",
+      "match": "\\big.Entity\\b"
+    },
+    "ImpactExtend": {
+      "name": "support.function.impact",
+      "match": "\\bextend\\b"
     }
   }
 }
