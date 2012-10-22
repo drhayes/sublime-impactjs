@@ -45,13 +45,28 @@
           "end": "\\);",
           "patterns": [
             {
+              "name": "meta.storage.type.impact.entity",
+              "begin": "\\b(ig\\.Entity)\\.(extend)\\s*\\(\\{",
+              "beginCaptures": {
+                "1": {
+                  "name": "support.class.impact.entity"
+                },
+                "2": {
+                  "name": "support.function.impact.extend"
+                }
+              },
+              "end": "\\}\\s*\\);",
+              "patterns": [
+                {
+                  "include": "source.js"
+                }
+              ]
+            },
+            {
               "include": "source.js"
             },
             {
-              "include": "#ImpactEntity"
-            },
-            {
-              "include": "#ImpactExtend"
+              "include": "#ImpactEntityName"
             }
           ]
         }
@@ -60,13 +75,9 @@
   ],
   "uuid": "fadaa18d-154c-45fb-98e3-64c3f4e4cbeb",
   "repository": {
-    "ImpactEntity": {
-      "name": "support.class.impact.entity",
-      "match": "\\big.Entity\\b"
-    },
-    "ImpactExtend": {
-      "name": "support.function.impact",
-      "match": "\\bextend\\b"
+    "ImpactEntityName": {
+      "name": "entity.name.type.impact.entity",
+      "match": "\\bEntity[a-zA-Z0-9]+\\b"
     }
   }
 }

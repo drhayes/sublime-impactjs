@@ -81,16 +81,40 @@
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>begin</key>
+							<string>\b(ig\.Entity)\.(extend)\s*\(\{</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>name</key>
+									<string>support.class.impact.entity</string>
+								</dict>
+								<key>2</key>
+								<dict>
+									<key>name</key>
+									<string>support.function.impact.extend</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>\}\s*\);</string>
+							<key>name</key>
+							<string>meta.storage.type.impact.entity</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>source.js</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
 							<key>include</key>
 							<string>source.js</string>
 						</dict>
 						<dict>
 							<key>include</key>
-							<string>#ImpactEntity</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#ImpactExtend</string>
+							<string>#ImpactEntityName</string>
 						</dict>
 					</array>
 				</dict>
@@ -99,19 +123,12 @@
 	</array>
 	<key>repository</key>
 	<dict>
-		<key>ImpactEntity</key>
+		<key>ImpactEntityName</key>
 		<dict>
 			<key>match</key>
-			<string>\big.Entity\b</string>
+			<string>\bEntity[a-zA-Z0-9]+\b</string>
 			<key>name</key>
-			<string>support.class.impact.entity</string>
-		</dict>
-		<key>ImpactExtend</key>
-		<dict>
-			<key>match</key>
-			<string>\bextend\b</string>
-			<key>name</key>
-			<string>support.function.impact</string>
+			<string>entity.name.type.impact.entity</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
