@@ -1,9 +1,44 @@
 {
   "scope": "meta.storage.type.impact.entity",
   "completions": [
-    {
-      "trigger": "addanim",
-      "contents": "this.addAnim('$1', ${2:1}, [$0]);"
-    }
+    "_wmBoxColor",
+    "_wmDrawBox",
+    "_wmIgnore",
+    "_wmScalable",
+    "accel",
+    "addAnim",
+    "angleTo",
+    "anims",
+    "animSheet",
+    "bounciness",
+    "check",
+    "checkAgainst",
+    "collides",
+    "collideWith",
+    "currentAnim",
+    "distanceTo",
+    "draw",
+    "friction",
+    "gravityFactor",
+    "handleMovementTrace",
+    "health",
+    "id",
+    "kill",
+    "last",
+    "maxVel",
+    "minBounceVelocity",
+    "name",
+    "offset",
+    "pos",
+    "ready",
+    "receiveDamage",
+    "size",
+    "slopeStanding",
+    "standing",
+    "touches",
+    "type",
+    "update",
+    "vel",
+    "zIndex"
   ]
 }
