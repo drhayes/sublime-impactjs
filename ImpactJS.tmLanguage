@@ -82,7 +82,7 @@
 					<array>
 						<dict>
 							<key>begin</key>
-							<string>\b(ig\.Entity)\.(extend)\s*\(\{</string>
+							<string>\b(ig\.Entity)\.(extend)\s*\(\s*\{</string>
 							<key>beginCaptures</key>
 							<dict>
 								<key>1</key>
@@ -100,6 +100,34 @@
 							<string>\}\s*\);</string>
 							<key>name</key>
 							<string>meta.storage.type.impact.entity</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>source.js</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>begin</key>
+							<string>\b(ig\.Game)\.(extend)\s*\(\s*\{</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>name</key>
+									<string>support.class.impact.game</string>
+								</dict>
+								<key>2</key>
+								<dict>
+									<key>name</key>
+									<string>support.function.impact.extend</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>\}\s*\);</string>
+							<key>name</key>
+							<string>meta.storage.type.impact.game</string>
 							<key>patterns</key>
 							<array>
 								<dict>

@@ -46,10 +46,28 @@
           "patterns": [
             {
               "name": "meta.storage.type.impact.entity",
-              "begin": "\\b(ig\\.Entity)\\.(extend)\\s*\\(\\{",
+              "begin": "\\b(ig\\.Entity)\\.(extend)\\s*\\(\\s*\\{",
               "beginCaptures": {
                 "1": {
                   "name": "support.class.impact.entity"
+                },
+                "2": {
+                  "name": "support.function.impact.extend"
+                }
+              },
+              "end": "\\}\\s*\\);",
+              "patterns": [
+                {
+                  "include": "source.js"
+                }
+              ]
+            },
+            {
+              "name": "meta.storage.type.impact.game",
+              "begin": "\\b(ig\\.Game)\\.(extend)\\s*\\(\\s*\\{",
+              "beginCaptures": {
+                "1": {
+                  "name": "support.class.impact.game"
                 },
                 "2": {
                   "name": "support.function.impact.extend"
