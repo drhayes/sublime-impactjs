@@ -1,5 +1,5 @@
 {
-  "scope": "meta.storage.type.impact.entity",
+  "scope": "source.js.impact",
   "completions": [
     "_wmBoxColor",
     "_wmDrawBox",

@@ -22,19 +22,36 @@
     }
   },
   {
-    "name": "meta.module.impact.definition",
-    "begin": "(defines)\\s*\\(",
-    "beginCaptures": {
+    "match": "\\b(defines)\\b",
+    "captures": {
       "1": {
         "name": "support.function.impact"
       }
-    },
-    "end": "\\)",
-    "patterns": [
-      {
-        "include": "source.js"
+    }
+  },
+  {
+    "match": "\\b(ig)\\b",
+    "captures": {
+      "1": {
+        "name": "support.variable.impact.namespace"
       }
-    ]
+    }
+  },
+  {
+    "match": "\\b(extend)\\b",
+    "captures": {
+      "1": {
+        "name": "support.function.impact"
+      }
+    }
+  },
+  {
+    "match": "\\b(Entity[a-zA-Z0-9]+)\\b",
+    "captures": {
+      "1": {
+        "name": "entity.name.type.impact.entity"
+      }
+    }
   },
   {
     "include": "source.js"
@@ -43,8 +60,6 @@
   "uuid": "fadaa18d-154c-45fb-98e3-64c3f4e4cbeb",
   "repository": {
     "ImpactEntityName": {
-      "name": "entity.name.type.impact.entity",
-      "match": "\\bEntity[a-zA-Z0-9]+\\b"
     }
   }
 }
