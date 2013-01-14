@@ -1,95 +1,44 @@
-{ "name": "ImpactJS",  "scopeName": "source.js.impact",
-  "fileTypes": ["js"],
+{
+  "name": "ImpactJS",
+  "scopeName": "source.js.impact",
   "patterns": [
-    {
-      "name": "meta.module.impact",
-      "begin": "\\b(ig)\\.(module)\\(",
-      "beginCaptures": {
-        "1": {
-          "name": "support.variable.impact.namespace"
-        },
-        "2": {
-          "name": "support.function.impact"
-        }
+  {
+    "match": "(ig)\\.(module)\\(",
+    "captures": {
+      "1": {
+        "name": "support.variable.impact.namespace"
       },
-      "end": "\\)\\b",
-      "patterns": [
-        {
-          "name": "entity.name.impact.module",
-          "match": "['\"]\\b(.+)\\b['\"]"
-        },
-        {
-          "name": "meta.module.impact.requirements",
-          "begin": "\\.\\s*(requires)\\s*\\((?=\\s*['\"a-zA-Z0-9\\.\\,\\s]*)",
-          "beginCaptures": {
-            "1": {
-              "name": "support.function.impact"
-            }
-          },
-          "end": "\\)(?=(\\.\\s*defines)?)",
-          "patterns": [
-            {
-              "name": "entity.name.requirement",
-              "match": "['\"][\\w\\.]+['\"]"
-            }
-          ]
-        },
-        {
-          "name": "meta.module.impact.definition",
-          "begin": "(defines)\\s*\\(",
-          "beginCaptures": {
-            "1": {
-              "name": "support.function.impact"
-            }
-          },
-          "end": "\\);",
-          "patterns": [
-            {
-              "name": "meta.storage.type.impact.entity",
-              "begin": "\\b(ig\\.Entity)\\.(extend)\\s*\\(\\s*\\{",
-              "beginCaptures": {
-                "1": {
-                  "name": "support.class.impact.entity"
-                },
-                "2": {
-                  "name": "support.function.impact.extend"
-                }
-              },
-              "end": "\\}\\s*\\);",
-              "patterns": [
-                {
-                  "include": "source.js"
-                }
-              ]
-            },
-            {
-              "name": "meta.storage.type.impact.game",
-              "begin": "\\b(ig\\.Game)\\.(extend)\\s*\\(\\s*\\{",
-              "beginCaptures": {
-                "1": {
-                  "name": "support.class.impact.game"
-                },
-                "2": {
-                  "name": "support.function.impact.extend"
-                }
-              },
-              "end": "\\}\\s*\\);",
-              "patterns": [
-                {
-                  "include": "source.js"
-                }
-              ]
-            },
-            {
-              "include": "source.js"
-            },
-            {
-              "include": "#ImpactEntityName"
-            }
-          ]
-        }
-      ]
+      "2": {
+        "name": "support.function.impact"
+      }
     }
+  },
+  {
+    "match": "\\.(requires)\\(",
+    "captures": {
+      "1": {
+        "name": "support.function.impact"
+      }
+    }
+  },
+  {
+    "name": "meta.module.impact.definition",
+    "begin": "(defines)\\s*\\(",
+    "beginCaptures": {
+      "1": {
+        "name": "support.function.impact"
+      }
+    },
+    "end": "\\)",
+    "patterns": [
+      {
+        "include": "source.js"
+      }
+    ]
+  },
+  {
+    "include": "source.js"
+  }
   ],
   "uuid": "fadaa18d-154c-45fb-98e3-64c3f4e4cbeb",
   "repository": {

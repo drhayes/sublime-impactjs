@@ -2,18 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>fileTypes</key>
-	<array>
-		<string>js</string>
-	</array>
 	<key>name</key>
 	<string>ImpactJS</string>
 	<key>patterns</key>
 	<array>
 		<dict>
-			<key>begin</key>
-			<string>\b(ig)\.(module)\(</string>
-			<key>beginCaptures</key>
+			<key>captures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -26,127 +20,47 @@
 					<string>support.function.impact</string>
 				</dict>
 			</dict>
+			<key>match</key>
+			<string>(ig)\.(module)\(</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.impact</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\.(requires)\(</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(defines)\s*\(</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.impact</string>
+				</dict>
+			</dict>
 			<key>end</key>
-			<string>\)\b</string>
+			<string>\)</string>
 			<key>name</key>
-			<string>meta.module.impact</string>
+			<string>meta.module.impact.definition</string>
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>match</key>
-					<string>['"]\b(.+)\b['"]</string>
-					<key>name</key>
-					<string>entity.name.impact.module</string>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>\.\s*(requires)\s*\((?=\s*['"a-zA-Z0-9\.\,\s]*)</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>support.function.impact</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>\)(?=(\.\s*defines)?)</string>
-					<key>name</key>
-					<string>meta.module.impact.requirements</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>match</key>
-							<string>['"][\w\.]+['"]</string>
-							<key>name</key>
-							<string>entity.name.requirement</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>(defines)\s*\(</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>support.function.impact</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>\);</string>
-					<key>name</key>
-					<string>meta.module.impact.definition</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>begin</key>
-							<string>\b(ig\.Entity)\.(extend)\s*\(\s*\{</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>support.class.impact.entity</string>
-								</dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>support.function.impact.extend</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>\}\s*\);</string>
-							<key>name</key>
-							<string>meta.storage.type.impact.entity</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.js</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
-							<key>begin</key>
-							<string>\b(ig\.Game)\.(extend)\s*\(\s*\{</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>support.class.impact.game</string>
-								</dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>support.function.impact.extend</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>\}\s*\);</string>
-							<key>name</key>
-							<string>meta.storage.type.impact.game</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.js</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>source.js</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#ImpactEntityName</string>
-						</dict>
-					</array>
+					<key>include</key>
+					<string>source.js</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.js</string>
 		</dict>
 	</array>
 	<key>repository</key>
