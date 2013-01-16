@@ -15,7 +15,7 @@
 });
 ]]></content>
     <tabTrigger>ige</tabTrigger>
-    <scope>source.js</scope>
+    <scope>source.js.impact</scope>
     <description>
       Defines an Impact entity.
     </description>
