@@ -14,15 +14,7 @@
     }
   },
   {
-    "match": "\\.(requires)\\(",
-    "captures": {
-      "1": {
-        "name": "support.function.impact"
-      }
-    }
-  },
-  {
-    "match": "\\b(defines)\\b",
+    "match": "\\.(requires|defines|extend)\\(",
     "captures": {
       "1": {
         "name": "support.function.impact"
@@ -38,14 +30,6 @@
     }
   },
   {
-    "match": "\\b(extend)\\b",
-    "captures": {
-      "1": {
-        "name": "support.function.impact"
-      }
-    }
-  },
-  {
     "match": "\\b(Entity[a-zA-Z0-9]+)\\b",
     "captures": {
       "1": {
@@ -57,9 +41,5 @@
     "include": "source.js"
   }
   ],
-  "uuid": "fadaa18d-154c-45fb-98e3-64c3f4e4cbeb",
-  "repository": {
-    "ImpactEntityName": {
-    }
-  }
+  "uuid": "fadaa18d-154c-45fb-98e3-64c3f4e4cbeb"
 }

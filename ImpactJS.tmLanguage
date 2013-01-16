@@ -33,19 +33,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\.(requires)\(</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>support.function.impact</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>\b(defines)\b</string>
+			<string>\.(requires|defines|extend)\(</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -65,18 +53,6 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>support.function.impact</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>\b(extend)\b</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
 					<string>entity.name.type.impact.entity</string>
 				</dict>
 			</dict>
@@ -88,12 +64,6 @@
 			<string>source.js</string>
 		</dict>
 	</array>
-	<key>repository</key>
-	<dict>
-		<key>ImpactEntityName</key>
-		<dict>
-		</dict>
-	</dict>
 	<key>scopeName</key>
 	<string>source.js.impact</string>
 	<key>uuid</key>
