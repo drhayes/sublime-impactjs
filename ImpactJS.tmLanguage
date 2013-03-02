@@ -29,6 +29,33 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+					<string>support.constant.impact.keys</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.variable.impact.namespace</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>support.constant.impact</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>support.constant.impact</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b((ig)\.(KEY)\.([a-zA-Z0-9_]*))\b</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
 					<string>support.function.impact</string>
 				</dict>
 			</dict>

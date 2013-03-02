@@ -10,7 +10,7 @@ ${3:.requires(
 });
 ]]></content>
     <tabTrigger>igm</tabTrigger>
-    <scope>source.js</scope>
+    <scope>source.js.impact</scope>
     <description>
       Defines an Impact module.
     </description>

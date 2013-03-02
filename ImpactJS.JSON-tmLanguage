@@ -14,6 +14,23 @@
     }
   },
   {
+    "match": "\\b((ig)\\.(KEY)\\.([a-zA-Z0-9_]*))\\b",
+    "captures": {
+      "1": {
+        "name": "support.constant.impact.keys"
+      },
+      "2": {
+        "name": "support.variable.impact.namespace"
+      },
+      "3": {
+        "name": "support.constant.impact"
+      },
+      "4": {
+        "name": "support.constant.impact"
+      }
+    }
+  },
+  {
     "match": "\\.(requires|defines|extend)\\(",
     "captures": {
       "1": {
