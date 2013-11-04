@@ -5,7 +5,7 @@
 .requires(
   'impact.entity'
 )
-.defines(function() {"use strict";
+.defines(function() {'use strict';
   Entity${1/^(.)/\U\1/} = ig.Entity.extend({
     ${2:init: function(x, y, settings) {
       this.parent(x, y, settings);
