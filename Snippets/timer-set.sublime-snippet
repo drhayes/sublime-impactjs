@@ -2,8 +2,9 @@
 	<content><![CDATA[
 timer.set ( ${1} );
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>set</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.js.impact</scope>
+	<description>
+	  Resets the starting time for this timer and sets the relative target time. Default 0.
+	</description>
 </snippet>

@@ -2,8 +2,9 @@
 	<content><![CDATA[
 ig.music.volume = ${1};
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>music-volume</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.js.impact</scope>
+	<description>
+	  Set the volume for all music tracks.
+	</description>
 </snippet>

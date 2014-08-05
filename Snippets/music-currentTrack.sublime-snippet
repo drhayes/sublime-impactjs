@@ -2,8 +2,9 @@
 	<content><![CDATA[
 ig.music.currentTrack
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>music-currentTrack</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.js.impact</scope>
+	<description>
+	  The instance of ig.Sound that is currently playing. null if .tracks is empty.
+	</description>
 </snippet>

@@ -2,8 +2,9 @@
 	<content><![CDATA[
 ig.music.loop = ${1:true};
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>music-loop</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.js.impact</scope>
+	<description>
+	  Whether the current track should be looped instead of jumping to the next track. If there is only one track in the .tracks array, this property is ignored. The default is false.
+	</description>
 </snippet>

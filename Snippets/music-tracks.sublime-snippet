@@ -2,8 +2,9 @@
 	<content><![CDATA[
 ig.music.tracks
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>music-tracks</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.js.impact</scope>
+	<description>
+	  An array of instances of ig.Sound to be played back.
+	</description>
 </snippet>

@@ -2,8 +2,9 @@
 	<content><![CDATA[
 ig.music.next();
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>music-next</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.js.impact</scope>
+	<description>
+	  Stops the current track and jumps to the next track in the .tracks array. If .random is true, the next track is chosen randomly.
+	</description>
 </snippet>

@@ -2,8 +2,9 @@
 	<content><![CDATA[
 ig.music.random = ${1:false};
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>music-random</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.js.impact</scope>
+	<description>
+	  If true, tracks are played in random order. The default is false.
+	</description>
 </snippet>

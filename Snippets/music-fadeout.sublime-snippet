@@ -2,8 +2,9 @@
 	<content><![CDATA[
 ig.music.fadeOut( ${1} );
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>music-fadeout</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.js.impact</scope>
+	<description>
+	  Linearly fade out the current track over time seconds.
+	</description>
 </snippet>
