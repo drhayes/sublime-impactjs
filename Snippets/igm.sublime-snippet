@@ -5,7 +5,9 @@
 ${3:.requires(
   $2
 )}
-.defines(function() {'use strict';
+.defines(function() {
+  'use strict';
+
   $0
 });
 ]]></content>
