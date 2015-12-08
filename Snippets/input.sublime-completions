@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+ig.input.pressed('${1}')
+]]></content>
+	<tabTrigger>input</tabTrigger>
+	<scope>source.js.impact</scope>
+</snippet>

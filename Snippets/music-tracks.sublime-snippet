@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ig.music.tracks
+]]></content>
+	<tabTrigger>music-tracks</tabTrigger>
+	<scope>source.js.impact</scope>
+	<description>
+	  An array of instances of ig.Sound to be played back.
+	</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+new ig.Sound( '${1}', ${2:true} );
+]]></content>
+	<tabTrigger>sound</tabTrigger>
+	<scope>source.js.impact</scope>
+	<description>
+	  Load a sound file. Requires path and filename. Multichannel is whether multiple "channels" for concurrent play should be created., default is true.
+	</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ig.music.currentTrack
+]]></content>
+	<tabTrigger>music-currentTrack</tabTrigger>
+	<scope>source.js.impact</scope>
+	<description>
+	  The instance of ig.Sound that is currently playing. null if .tracks is empty.
+	</description>
+</snippet>

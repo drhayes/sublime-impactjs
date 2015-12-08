@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+timer.delta()
+]]></content>
+	<tabTrigger>delta</tabTrigger>
+	<scope>source.js.impact</scope>
+	<description>
+	  Returns the time in seconds relative to the timers target time.
+	</description>
+</snippet>

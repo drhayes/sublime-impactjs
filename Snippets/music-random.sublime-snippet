@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ig.music.random = ${1:false};
+]]></content>
+	<tabTrigger>music-random</tabTrigger>
+	<scope>source.js.impact</scope>
+	<description>
+	  If true, tracks are played in random order. The default is false.
+	</description>
+</snippet>

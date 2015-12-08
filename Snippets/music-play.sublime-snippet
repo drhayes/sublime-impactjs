@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ig.music.play();
+]]></content>
+	<tabTrigger>music-play</tabTrigger>
+	<scope>source.js.impact</scope>
+	<description>
+	  Starts playing the current track.
+	</description>
+</snippet>

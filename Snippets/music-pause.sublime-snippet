@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ig.music.pause();
+]]></content>
+	<tabTrigger>music-pause</tabTrigger>
+	<scope>source.js.impact</scope>
+	<description>
+	  Pauses the current track.
+	</description>
+</snippet>

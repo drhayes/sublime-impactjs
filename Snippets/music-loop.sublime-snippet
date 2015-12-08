@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ig.music.loop = ${1:true};
+]]></content>
+	<tabTrigger>music-loop</tabTrigger>
+	<scope>source.js.impact</scope>
+	<description>
+	  Whether the current track should be looped instead of jumping to the next track. If there is only one track in the .tracks array, this property is ignored. The default is false.
+	</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ig.music.add( '${1}' );
+]]></content>
+	<tabTrigger>music-add</tabTrigger>
+	<scope>source.js.impact</scope>
+    <description>
+      Adds the given track to the .tracks array and sets .currentTrack to this one, if it is the first track to be added.
+    </description>
+</snippet>

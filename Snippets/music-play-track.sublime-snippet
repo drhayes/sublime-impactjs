@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ig.music.play( '${1}' );
+]]></content>
+	<tabTrigger>music-play-track</tabTrigger>
+	<scope>source.js.impact</scope>
+	<description>
+	  Directly jump to and play the named track.
+	</description>
+</snippet>

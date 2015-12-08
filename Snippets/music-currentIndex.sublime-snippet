@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ig.music.currentIndex
+]]></content>
+	<tabTrigger>music-currentIndex</tabTrigger>
+	<scope>source.js.impact</scope>
+    <description>
+      The index of the current track in the .tracks array.
+    </description>
+</snippet>

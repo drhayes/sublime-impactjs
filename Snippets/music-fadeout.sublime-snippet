@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ig.music.fadeOut( ${1} );
+]]></content>
+	<tabTrigger>music-fadeout</tabTrigger>
+	<scope>source.js.impact</scope>
+	<description>
+	  Linearly fade out the current track over time seconds.
+	</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+timer.set ( ${1} );
+]]></content>
+	<tabTrigger>set</tabTrigger>
+	<scope>source.js.impact</scope>
+	<description>
+	  Resets the starting time for this timer and sets the relative target time. Default 0.
+	</description>
+</snippet>

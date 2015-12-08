@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ig.music.volume = ${1};
+]]></content>
+	<tabTrigger>music-volume</tabTrigger>
+	<scope>source.js.impact</scope>
+	<description>
+	  Set the volume for all music tracks.
+	</description>
+</snippet>
